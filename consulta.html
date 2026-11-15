@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Estudiantes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Universidad · Registro de Estudiantes</h1>
+    <nav>
+      <a href="index.html">Registro</a>
+      <a href="consulta.html" class="activo">Consulta</a>
+    </nav>
+  </header>
+
+  <main class="contenedor ancho">
+    <section class="tarjeta">
+      <h2>Estudiantes registrados</h2>
+
+      <div class="barra">
+        <input type="search" id="buscador" placeholder="Buscar por carné, nombre, correo, carrera, teléfono...">
+        <button type="button" id="btnActualizar">⟳ Actualizar</button>
+      </div>
+      <p class="ayuda" id="contador"></p>
+
+      <div class="tabla-scroll">
+        <table id="tablaEstudiantes">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Carné</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Correo</th>
+              <th>Carrera</th>
+              <th>Teléfono</th>
+              <th>Fecha de nacimiento</th>
+              <th>Género</th>
+              <th>Fecha de registro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="10" class="centro">Cargando...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/consulta.js"></script>
+</body>
+</html>
