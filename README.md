@@ -2,6 +2,17 @@
 
 Aplicación web completa para registrar estudiantes y consultarlos, con un **Web Service tipo POST publicado en la nube**.
 
+**Estudiante:** Edilberto Natanael Pérez Díaz
+
+## Enlaces del proyecto
+
+| | URL |
+|---|---|
+| Aplicación (formulario) | https://registro-estudiantes-xi.vercel.app |
+| Ventana de consulta | https://registro-estudiantes-xi.vercel.app/consulta.html |
+| Web Service (POST / GET) | https://registro-estudiantes-xi.vercel.app/api/estudiantes |
+| Código fuente | https://github.com/EdilbertoP/registro-estudiantes |
+
 ## 1. Herramientas utilizadas
 
 | Herramienta | Para qué se usa | Costo |
@@ -33,7 +44,7 @@ registro-estudiantes/
 
 ## 3. Web Service
 
-**URL:** `https://SU-PROYECTO.vercel.app/api/estudiantes`
+**URL:** `https://registro-estudiantes-xi.vercel.app/api/estudiantes`
 
 ### POST – registrar estudiante
 Cuerpo (JSON):
@@ -92,7 +103,7 @@ Requerimientos adicionales:
 
 ### Paso 2 – Llaves de reCAPTCHA
 1. Entrar a https://www.google.com/recaptcha/admin y registrar un sitio tipo **reCAPTCHA v2 → "No soy un robot"**.
-2. En dominios agregar `localhost` y el dominio de Vercel (ej. `mi-proyecto.vercel.app`).
+2. En dominios agregar `localhost` y el dominio de Vercel (`registro-estudiantes-xi.vercel.app`).
 3. Copiar la **Site key** en `js/config.js` y la **Secret key** en la variable `RECAPTCHA_SECRET`.
 
 > El proyecto ya trae las **llaves de prueba oficiales de Google**, que funcionan en cualquier dominio y siempre aprueban. Sirven para probar, pero el widget muestra un aviso de "solo para pruebas".
@@ -111,11 +122,11 @@ Abrir http://localhost:3000
 1. Subir la carpeta a un repositorio de **GitHub** (sin el archivo `.env`).
 2. En https://vercel.com → **Add New → Project** → importar el repositorio. Framework: **Other**. No requiere comando de build.
 3. En **Settings → Environment Variables** agregar `SUPABASE_URL`, `SUPABASE_KEY` y `RECAPTCHA_SECRET`.
-4. **Deploy**. El sitio queda en `https://SU-PROYECTO.vercel.app` y el Web Service en `https://SU-PROYECTO.vercel.app/api/estudiantes`.
+4. **Deploy**. El sitio queda en `https://registro-estudiantes-xi.vercel.app` y el Web Service en `https://registro-estudiantes-xi.vercel.app/api/estudiantes`.
 
 ### Probar el Web Service sin el formulario (cmd)
 ```
-curl https://SU-PROYECTO.vercel.app/api/estudiantes
+curl https://registro-estudiantes-xi.vercel.app/api/estudiantes
 ```
 Un POST sin token de reCAPTCHA debe responder **400**, lo que demuestra que la protección anti-bots funciona.
 

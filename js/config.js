@@ -12,6 +12,6 @@
 //   en el mismo dominio.
 // =============================================================
 const CONFIG = {
-  RECAPTCHA_SITE_KEY: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+  RECAPTCHA_SITE_KEY: "6Lea0yEuAAAAALUNajPuB1rlreakdbVEDqifUSuC",
   API_URL: "/api/estudiantes"
 };
